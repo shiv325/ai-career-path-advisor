@@ -8,7 +8,7 @@ st.write(
 )
 
 # Configure Gemini API and create the model.
-genai.configure(api_key="AIzaSyCaVdOkYqC2QQe855cljGbsAonqnfKch3Q")
+genai.configure(api_key = st.secrets["gemini_api_key"])
 model = genai.GenerativeModel("gemini-2.5-flash")
 
 # Define context and key features for the conversation.
